@@ -61,6 +61,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Security\" />
+    <Folder Include="File" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Slurp.sql" />
@@ -71,11 +72,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="File_FileExists.cs" />
-    <Compile Include="File_GetCRC32.cs" />
-    <Compile Include="File_Zip.cs" />
+    <None Include="Slurp.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Slurp.publish.xml" />
+    <Compile Include="SqlFunction1.cs" />
+    <Compile Include="File\File_GetDirectoryListing.cs" />
+    <Compile Include="File\File_GetDirectoryListing2.cs" />
   </ItemGroup>
 </Project>
