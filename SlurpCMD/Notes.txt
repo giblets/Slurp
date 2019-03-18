@@ -1,0 +1,127 @@
+﻿
+TODO:
+1. Get File Uploading to TimeStamped Table
+2. Get File Uploading to with assigned Batch and MetaData
+3. Get file Upload to move directory once succeeded.
+3. Get File to Recognize Duplicate Uploads 
+
+
+
+1. Ascertain Record Type from FileName
+2. Import to Temp Table
+3. Validate and Import Records
+4. 
+
+//******************************************************************
+     UDS Record Importer
+//******************************************************************
+5th or 6th letter in FileName determines record type.
+
+UDS.
+IRecord.Stage
+Stage.
+Temp.
+ARecord
+Stage
+
+Record.A
+Record.B
+Record.C
+
+Staging.A
+Staging.B
+Staging.C
+
+Upload.File
+
+Import
+Batch
+UploadBatch
+	-Text
+	-TimeStamp
+	-FileCRC
+	-FileName
+	-RecordType
+
+Raw
+	-FileName
+	-UploadBatchID
+
+
+UDS.A_Record
+UDS.Batch
+Stage.A_Record
+Stage.A_Record
+Raw.A_Record
+Raw.File
+Straw.Data
+Straw
+
+
+/***********************************
+    Actions
+/***********************************
+Purge
+Overwrite
+Validate
+Compare
+Identify
+Query ClaimCenters Status/Awareness of Record
+
+
+Scheduling
+Handling
+
+
+DefaultImport
+
+Slurp.batch
+
+yyyymmdd_Import.
+
+slurp.settings
+	straw_filename_filter
+	straw_file_maxsize_filter
+	straw_file_CRCduplicate_filter
+
+	straw_checkfrequency
+
+	directory_processed
+	directory_unzipped
+	directory_failed
+
+slurp.job
+slurp.step
+
+
+slurp.filter
+	Type: File
+
+
+straw.opening
+	FilenameFilter:
+	FileName
+straw.file_yyyymmdd_hhmmssmmmm
+
+mouth.food_yyyymmdd_hhmmssmmmm
+mouth.lolipop_yyyymmdd_hhmmssmmmm
+mouth.lolipop_batch_1_yyyymmdd_hhmmssmmmm
+
+taste.usp_Identify @BatchID
+
+brain.log
+brain.audit
+brain.batch
+brain.identify
+brain.identityrules
+brain.flavor
+brain.food
+brain.foodrules
+brain.foodfilter
+
+stomach.usp_Process
+stomach.lolipop_batch_1
+
+digest
+
+
