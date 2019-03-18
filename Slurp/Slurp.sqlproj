@@ -26,6 +26,9 @@
     <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
     <DefaultSchema>Slurp</DefaultSchema>
+    <PermissionSet>UNSAFE</PermissionSet>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>GM.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -73,10 +76,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Slurp.publish.xml" />
+    <None Include="GM.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SqlFunction1.cs" />
     <Compile Include="File\File_GetDirectoryListing.cs" />
     <Compile Include="File\File_GetDirectoryListing2.cs" />
+    <Compile Include="File\File_FolderExists.cs" />
+    <Compile Include="File\File_GetCurrentDirectory.cs" />
   </ItemGroup>
 </Project>
